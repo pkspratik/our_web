@@ -104,7 +104,7 @@ export function About() {
         <div className="col-md-4" data-aos="flip-left">
           <div className="card border-0 shadow-sm">
             <img
-               src="asert/teamimage/pratik.PNG"
+               src="asert/teamimage/pratik.jpg"
               alt="CEO"
               className="card-img-top rounded-top"
             />
@@ -154,7 +154,7 @@ export function About() {
         <div className="col-md-4" data-aos="flip-right" data-aos-delay="300">
           <div className="card border-0 shadow-sm">
             <img
-              src="asert/teamimage/adarsh.PNG"
+              src="asert/teamimage/adarsh.jpg"
               alt="Team Member"
               className="card-img-top rounded-top"
             />

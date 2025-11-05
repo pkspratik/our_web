@@ -2,12 +2,10 @@ import {NavBar} from '../CoustomNavBar/NavBar';
 import {BodyBg} from '../BodyTheams/BodyBg';
 import MyCarousel from '../Carousal/carousal';
 
-
 import {WatherAPIdata} from '../FeatchingData/HomeAPI/FeatchingDataAPI'; 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-//import Home from "../Home/home";
 import {About} from "../About/about";
 import {ServiceComp} from "../ServiceComp/ServiceComp";
 import {Contect} from "../Contact/contect";
@@ -34,7 +32,6 @@ export default function Home() {
        <Routes>
         <Route path="/" element={
           <>
-          {/* <h2>Welcome</h2> */}
             <MyCarousel items={slidesData} />
              <WatherAPIdata/>
              <BodyBg/>

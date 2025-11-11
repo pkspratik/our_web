@@ -8,8 +8,17 @@ export function NavBar(prop) {
       className="d-flex justify-content-between align-items-center p-2 m-1 navbar-custom shadow-lg"
     >
       {/* Brand Title */}
-      <div>
-        <span className="fw-bolder fs-5">{prop.BrandTitle}</span>
+      <div
+              className="fw-bold rounded-circle d-flex align-items-center justify-content-center"
+              style={{
+                width: "40px",
+                height: "40px",
+                // backgroundColor: "#00B386",
+                color: "#fff",
+                boxShadow: "0 0 8px rgba(0, 179, 134, 0.8)",
+              }}
+            >
+        <span className="fw-bolder fs-5 text-black-50">{prop.BrandTitle}</span>
       </div>
 
       {/* Menu Items */}
@@ -20,7 +29,7 @@ export function NavBar(prop) {
             key={index} 
             to={item === "Home" ? "/" : `/${item.toLowerCase()}`} 
             // className="mx-2 text-decoration-none text-dark"
-            className="navbar-item px-3 mx-1 fw-bold text-decoration-none text-white"
+            className="navbar-item px-3 mx-1 fw-bold text-decoration-none text-black-50"
           >
             {item}
           </Link>

@@ -109,7 +109,7 @@ export function About() {
               className="card-img-top rounded-top"
             />
             <div className="card-body">
-              <h6 className="fw-bold text-success">P. Singh</h6>
+              <h6 className="fw-bold text-success">C.E.O :- P. Singh</h6>
               <p className="text-muted mb-1">Full Stack Developer</p>
               <i className="bi bi-linkedin text-primary me-2"></i>
               <i className="bi bi-youtube text-danger me-2"></i>
@@ -125,7 +125,7 @@ export function About() {
               className="card-img-top rounded-top"
             />
             <div className="card-body">
-              <h6 className="fw-bold text-success">Ujjwal Singh</h6>
+              <h6 className="fw-bold text-success">M.D :- Ujjwal Singh</h6>
               <p className="text-muted mb-1">Application Developer</p>
               <i className="bi bi-linkedin text-primary me-2"></i>
               <i className="bi bi-behance text-info me-2"></i>
@@ -141,7 +141,7 @@ export function About() {
               className="card-img-top rounded-top"
             />
             <div className="card-body">
-              <h6 className="fw-bold text-success">Achal Priya</h6>
+              <h6 className="fw-bold text-success">M.D :- Achal Priya</h6>
               <p className="text-muted mb-1">Web Developer</p>
               <i className="bi bi-linkedin text-primary me-2"></i>
               <i className="bi bi-twitter text-info me-2"></i>
@@ -159,7 +159,7 @@ export function About() {
               className="card-img-top rounded-top"
             />
             <div className="card-body">
-              <h6 className="fw-bold text-success">Adarsh Singh</h6>
+              <h6 className="fw-bold text-success">Co-Founder :- Adarsh Singh</h6>
               <p className="text-muted mb-1">Business Analyst</p>
               <i className="bi bi-linkedin text-primary me-2"></i>
               <i className="bi bi-twitter text-info me-2"></i>
@@ -201,7 +201,7 @@ export function About() {
 
               <div className="mb-3">
                 <i className="bi bi-geo-alt-fill text-success me-2 fs-5"></i>
-                <span>Sai Baba Boys Hostel, Near by AAA Mall, Hyderabad, India</span>
+                <span>Sai baba colony Ameerpet, Near by AAA Mall, Hyderabad, India</span>
               </div>
 
               <div className="mb-3">

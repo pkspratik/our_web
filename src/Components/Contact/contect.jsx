@@ -1,8 +1,15 @@
 import {BodyBg} from '../BodyTheams/BodyBg';
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect } from "react";
 
 export function Contect() {
+ 
+  // this code for display everytime this screen on top
+      useEffect(() => {
+         window.scrollTo(0, 0);
+       }, []);
+
 
       return (
     // <div className="container py-5">
@@ -117,7 +124,7 @@ export function Contect() {
 
               <div className="mb-3">
                 <i className="bi bi-geo-alt-fill text-success me-2 fs-5"></i>
-                <span>Sai Baba Boys Hostel, Near by AAA Mall, Hyderabad, India</span>
+                <span>Sai baba colony Ameerpet,near by AAA mall, Hyderabad,India</span>
               </div>
 
               <div className="mb-3">

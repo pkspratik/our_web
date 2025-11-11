@@ -1,5 +1,5 @@
 import {NavBar} from '../CoustomNavBar/NavBar';
-import {BodyBg} from '../BodyTheams/BodyBg';
+import {Footer} from '../Footer/footer';
 import MyCarousel from '../Carousal/carousal';
 
 import {WatherAPIdata} from '../FeatchingData/HomeAPI/FeatchingDataAPI'; 
@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {About} from "../About/about";
 import {ServiceComp} from "../ServiceComp/ServiceComp";
+import {BasicComputer} from "../CategoryList/BasicComputer/BasicComputer";
+
 import {Contect} from "../Contact/contect";
 import {Help} from "../Help/help";
 export default function Home() {
@@ -26,7 +28,7 @@ export default function Home() {
       
       <BrowserRouter>
       
-       <NavBar BrandTitle="ACI" MenuItems={["Home","Service","Contect","About","Help"]}/>  
+       <NavBar BrandTitle="ACI" MenuItems={["Home","Service","About","Contect","Help"]}/>  
        
        
        <Routes>
@@ -34,16 +36,17 @@ export default function Home() {
           <>
             <MyCarousel items={slidesData} />
              <WatherAPIdata/>
-             <BodyBg/>
+             
           </>
           } />
         <Route path="/service" element={<ServiceComp />} />
         <Route path="/contect" element={<Contect />} />
         <Route path="/about" element={<About />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/basicComputer" element={<BasicComputer />} />
         <Route path="*" element={<div>OOPS! Page not found</div>} />
       </Routes>
-
+         <Footer />
        </BrowserRouter>
 
     </div>

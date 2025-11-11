@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  animation: gradientMove 10s ease infinite;    /*uncomment for animation bg color */
+   /* animation: gradientMove 10s ease infinite;   */
+   /*uncomment for animation bg color */
   background-size: 400% 400%;
 }
 
@@ -28,4 +29,31 @@ button {
 button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/*table view of bg botton*/
+
+.bg-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 20px;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.bg-button-row .btn {
+  transition: all 0.3s ease;
+}
+
+.bg-button-row .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }

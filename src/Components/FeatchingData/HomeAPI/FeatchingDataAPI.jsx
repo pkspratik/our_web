@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+import { Link } from "react-router-dom";
+
 export function WatherAPIdata(){
   const [product, setProduct] = useState([
     { id: 0, category: "", title: "", discription: "", image: "", price: 0, rating: { rate: 0, count: 0 } },
@@ -38,8 +40,17 @@ export function WatherAPIdata(){
             height: "100%",
             backgroundColor: "transparent",
           }}
-        >
+         >
+          
           {product.map((prod, i) => (
+
+           <Link 
+            key={i} 
+            to={prod === "Home" ? "/" : `basicComputer`} 
+            
+            >
+           
+
             <div
               key={i}
               data-aos="zoom-in"
@@ -82,8 +93,8 @@ export function WatherAPIdata(){
                 </h6>
               </div>
               <div className="card-body">
-                <dl className="mb-1">💰 Price</dl>
-                <dd className="mb-2 fw-semibold text-success">₹ {prod.price}</dd>
+                {/* <dl className="mb-1">💰 Price</dl>
+                <dd className="mb-2 fw-semibold text-success">₹ {prod.price}</dd> */}
                 <dl className="mb-1">⭐ Rating</dl>
                 <dd>
                   <span className="badge bg-success p-2 rounded-pill">
@@ -94,12 +105,17 @@ export function WatherAPIdata(){
                 </dd>
               </div>
               <div className="card-footer border-0 bg-transparent">
-                <button className="btn btn-success fw-semibold bi bi-cart-plus w-100">
-                  Add to Cart
+                <button className="btn btn-success fw-semibold
+               
+                  w-100">
+                  Learn more
                 </button>
               </div>
             </div>
+            </Link>
           ))}
+
+          
         </main>
       </section>
     </div>

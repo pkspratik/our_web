@@ -4,7 +4,7 @@
   backdrop-filter: blur(10px); /* glass effect */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  color: white;
+  color: rgb(124, 26, 26);
 }
 
 /* Menu items */

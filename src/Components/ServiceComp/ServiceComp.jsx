@@ -8,8 +8,13 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 export function ServiceComp() {
 
+
+   
+     
+
   useEffect(() => {
     AOS.init({ duration: 900, once: true });
+    window.scrollTo(0, 0);   // this code for display everytime this screen on top
   }, []);
 
   const courses = [
